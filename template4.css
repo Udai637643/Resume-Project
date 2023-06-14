@@ -1,0 +1,194 @@
+@import url("http://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body{
+    background-color: #ccc;
+    font-family: "Roboto",sans-serif;
+    padding: 0;
+    margin: 15px;
+    font-size: 14px;
+
+}
+.resume{
+    margin: 0;
+    max-width: 800px;
+    box-shadow: 5px 5px 5px #b6a7a7;
+
+
+}
+
+@media(min-width:768px){
+    .resume{
+        margin: 50px auto;
+    }
+}
+
+.resume__container{ 
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:768px){
+    .resume__container{
+        flex-direction: row;
+
+    }
+}
+.resume__information{
+    padding: 15px 20px;
+}
+@media(min-width:768px){
+    .resume__information{
+        padding: 50px 20px;
+        min-height: 800px;
+
+    }
+}
+.resume__information:first-child{
+
+    background-color: #414143;
+     flex-basis: 40%;
+     color: #fff;
+     border-bottom: 10px solid #46dff0;
+     border-right: 10px solid #46dff0 ;
+      
+
+}
+.resume__information:last-child{
+    background-color: #fff;
+    flex-basis: 60%;
+    box-shadow: inset 0 5px 5px 0 #afafb2;
+}
+@media(min-width:768px){
+    .resume__information:last-child{
+        box-shadow: inset 5px 0 5px #afafb2;
+    }
+}
+.resume__profile{
+    padding: 0 10px;
+}
+.resume__profile .image{
+    width: 180px;
+    background-color: #46dff0;
+    padding: 10px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 100%;
+} 
+.resume__profile .details{
+    text-align: center;
+    margin: 15px 0;
+}
+@media(min-width:768px){
+    .resume__profile  .detail{
+        margin:50px 0;
+    }
+}
+.resume__profile .detail .title{
+    font-size:32px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+.resume__profile  .details .subtitle{
+    font-size: 20px;
+    margin: 0;
+}
+ .resume__side-section{
+    margin: 0 0 20px 0;
+ }
+ .resume__side-section .title{
+    position: relative;
+    margin: 0 0 30px 0;
+    font-weight: 600;
+    font-size: 16px ;
+ }
+ .resume__side-section .title::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #46dff0;
+    position: absolute;
+    bottom: -10px;
+
+ }
+ .resume__side-section .title::after{
+    content: '';
+    width: 30%;
+    height: 10%;
+    background-color: #46dff0;
+    position: absolute;
+    bottom: -13px;
+    right: -30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:5px ;
+ }
+ .resume__side-section .list{
+    margin: 0;
+    padding: 0 16px;
+
+ } 
+ .resume__side-section .progress{
+    height: 20px;
+ }
+ .resume__side-section .progress .progress-bar{
+    background-color: #000;
+ }
+ .resume__section{
+    margin-bottom:20px ;
+ }
+ .resume__section .header{
+    display: flex;
+    column-gap: 45px;
+
+ }
+ .resume__section .header .fas{
+    background-color: #46dff0;
+    border-radius: 100%;
+    color: #fff;
+    padding: 10px ;
+ }
+  
+ .resume__section .header .title{
+    margin: 0;
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+
+ }
+ .resume__section .header .title::before{
+    content:'';
+    width:100%;
+    height:2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 10px;
+
+ }
+ .resume__section .header .title::after{
+    content:'';
+    width: 20%;
+    height: 5px;
+    background-color: #46dff0;
+    position: absolute;
+    left: -2px;
+    bottom: 8px;
+    border-radius: 5px;
+
+ }
+ .resume__section .details{
+    display: flex;
+    margin-top: 10px;
+ }
+ .resume__section .details .year{
+    font-size: 12px;
+    width: 100px ;
+ }
+ .resume__section .details .info{
+    width:100%;
+ }
+ .resume__section .details .info .title{
+    margin: 0 0 10px 0;
+ }
+ .resume__section .details .info .list{
+    margin: 0;
+    padding: 0 16px;
+ }

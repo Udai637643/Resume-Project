@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="template3.css">
+    <title>temlate3</title>
+</head>
+
+<body>
+
+    </style>
+    <title>temlate2.0</title>
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="html2pdf.bundle.min.js"></script>
+
+    <body>
+
+
+        <div class="container" style="height: 150vh;" id="reso-gen">
+            <h1 class="head">FILL YOUR INFORMATION</h1>
+            <p class="head">Make effective resume</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Personal information</h3>
+                    <div class="form-group">
+                        <label for="nameinfo">Your name</label>
+                        <input type="text" id="nameinfo" placeholder="Enter name" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proinfo">Profetion</label>
+                        <input type="text" id="proinfo" placeholder="Enter Profetion " class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emaiinfo">Email</label>
+                        <input type="email" id="emailinfo" placeholder="Enter Email" class="form-control">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="numberinfo">Your contact no.</label>
+                        <input type="number" id="numberinfo" placeholder="Enter contact no." class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Addressinfo">Your Address</label>
+                        <textarea id="Addressinfo" placeholder="Enter your address" class="form-control"
+                            rows=""> </textarea>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="">Select your Photo</label>
+                        <input id="imgfield" type="file" class="form-control">
+                    </div>
+                    <p class="text-secondary">Important information</p>
+
+
+                    <div class="form-group">
+                        <label for="Facebookinfo">Your FacebookID</label>
+                        <input type="text" id="facebookinfo" placeholder="Enter FacebookID" class="form-control">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="Instagraminfo">Your InstagramID</label>
+                        <input type="text" id="Instagraminfo" placeholder="Enter InstagramID" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="LinkedIninfo">Your LinkedInID</label>
+                        <input type="text" id="LinkedIninfo" placeholder="Enter LinkedInID" class="form-control">
+                    </div>
+
+                    <div class="form-group" id="hoid">
+                        <label for="">Hobbiess</label>
+                        <textarea placeholder="Enter name" class="form-control ho" rows="3"> </textarea>
+
+
+                        <div class="container text-center " id="hobotton">
+                            <button onclick="hobby()" class="button-85" role="button">ADD</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h3>Professional information</h3>
+
+                  
+                    <div class="form-group" id="educate">
+                        <label for="">Education</label>
+                        <textarea placeholder="Enter name" class="form-control edu" rows="3"> </textarea>
+
+
+                        <div class="container text-center " id="edubotton">
+                            <button onclick="addedu()" class="button-85" role="button">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="experid">
+                        <label for="">Experience</label>
+                        <textarea placeholder="Enter name" class="form-control exp" rows="3"> </textarea>
+
+
+                        <div class="container text-center " id="exbotton">
+                            <button onclick="exper()" class="button-85" role="button">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="proid">
+                        <label for="">Projects</label>
+                        <textarea placeholder="Enter name" class="form-control pro" rows="3"> </textarea>
+
+
+                        <div class="container text-center " id="prbotton">
+                            <button onclick="project()" class="button-85" role="button">ADD</button>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="form-group" id="wrid">
+                        <label for="">Your Skills</label>
+                        <textarea placeholder="Enter name" class="form-control workfield" rows="3"> </textarea>
+
+
+                        <div class="container text-center" id="wkbotton">
+                            <button class="button-85" onclick="added()" role="button">ADD</button>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-group" id="workex">
+                        <label for="">Your Awards</label>
+                        <textarea placeholder="Enter name" class="form-control edfield" rows="3"> </textarea>
+
+
+                        <div class="container text-center " id="edbotton">
+                            <button onclick="add()" class="button-85" role="button">ADD</button>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group" id="hobi">
+                        <label for="">Languages</label>
+                        <textarea placeholder="Enter name" class="form-control hobifield" rows="3"> </textarea>
+
+
+                        <div class="container text-center " id="hbbotton">
+                            <button class="button-85" onclick="ad()" role="button">ADD</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="containar text-center mt-3">
+                <button onclick="genreate()" class="button-85" role="button">Your Resume</button>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="main" id="template">
+            <div class="top-section">
+                <img src="udai.jpg" class="profile" id="myimag" alt="">
+                <p class="p1" id="namet">Udai <span>regar</span></p>
+                <p class="p2" id="prot">web devloper</p>
+                <p class="p3" id="address" style="color: antiquewhite;">Vill.Ranikhera Thehsil Nimbahera Dis.Chittorgarh Rajasthan</p>
+            </div>
+
+            <div class="clearfix "></div>
+
+            <div class="col-div-4">
+                <div class="content-box" style="padding-left: 40px">
+                    <p class="headed">Contact</p>
+
+                    <p class="p3" id="numid" style="margin-top: 15px;"> &nbsp;&nbsp;</p>
+                    <i class="fa fa-phone" id="numtinfo" style="position: relative;top: -1em;left: -0.
+                    5em;"></i>
+
+                    <p class="p3" id="emailid" style="margin-top: 15px;">&nbsp;&nbsp; </p>
+                    <i class="fa fa-envelope" id="emailinf" style="position:relative;top:-1em; left:-0.5em"></i>
+
+                    <p class="p3" id="linkedid" style="margin-top: 15px;">&nbsp;&nbsp; </p>
+                    <i class='fa fa-linkedin'id="linkedt" style="position:relative;top:-1em; left:-0.5em"></i>
+
+                    <p class="p3" id="facebookid" style="margin-top: 15px;">&nbsp;&nbsp; </p>
+                    <i class='fa fa-facebook'id="fbt" style="position:relative;top:-1em; left:-0.5em"></i>
+
+                    
+                    <p class="p3" id="instagramid" style="margin-top: 15px;">&nbsp;&nbsp; </p>
+                    <i class='fa fa-instagram'id="instat" style="position:relative;top:-1em; left:-0.5em"></i>
+
+
+
+
+                    <!-- 
+                    <p class="p3" id="addressid" style="margin-top: 15px;">&nbsp;&nbsp; </p>
+                        <i class="fa fa-home" id="addret" style="position:relative;top:-1em; left:-0.5em"></i>  -->
+
+
+                    <br>
+
+                    <p class="headed">My skills</p>
+                    <ul class="skills" id="skills">
+                        <li></li>
+
+                    </ul>
+
+                    <br>
+
+                    <p class="headed">My Awards</p>
+                    <ul class="skills" id="award">
+                        <li></li>
+
+                    </ul>
+                    <br>
+
+                  
+
+                </div>
+            </div>
+
+
+            <div class="line"></div>
+            <div class="col-div-8">
+                <div class="content-box" style=" padding:20px;">
+                    <br>
+
+                    <p class="headed">➣ Education</p>
+                    <ul class="skills" id="education">
+                        <li></li>
+
+                    </ul>
+                    <br>
+                    
+                    <p class="headed">➣ Experience</p>
+                    <ul class="skills" id="experience">
+                        <li></li>
+
+                    </ul>
+                    <br>
+
+                    <p class="headed">➣ Projects</p>
+                    <ul class="skills" id="projects">
+                        <li></li>
+
+                    </ul>
+                    <br>
+
+                    <p class="headed">➣ Hobbies</p>
+                    <ul class="skills" id="hobbies">
+                        <li></li>
+
+                    </ul>
+                    <br>
+                    <p class="headed">Languages</p>
+                    <ul class="skills" id="language">
+                        <li></li>
+
+                    </ul>
+                    <br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    
+                   
+    
+                    
+                </div>
+                <div class="container mt-3 text-center">
+                    <button id="color" onclick="printr()" class="btn obje" style="position: relative; top: -15em; left: -12em;">
+                        print
+                    </button>
+                </div>
+            </div>
+           
+
+        </div>
+     
+     
+
+        <script src="script3.js"></script>
+    </body>
+
+</html>
+

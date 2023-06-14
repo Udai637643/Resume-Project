@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+display: flex;
+gap: 72px;
+background-color: rgba(56, 113, 151, 0.921);
+padding: 10px;
+margin: 0;
+justify-content: left;
+}
+ul .nav{
+list-style: none;
+
+}
+ul .nav a{
+font-size: 20px;
+font-weight: 400;
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+padding: 10px;
+transition: 0.5s ease;
+
+}
+ul :hover .nav a{
+color: #30eef432;
+}
+ul:hover .nav a:not(:hover){
+color: white;
+opacity: 0.3;
+filter: blur(1px);
+}
+ul img{
+    width: 250px;
+ margin-right: 430px;
+}
